@@ -26,6 +26,14 @@
   --small-text: hsla(0, 0%, 100%, 0.90);
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: serif;

@@ -4,12 +4,16 @@ import Sidebar from './components/Sidebar'
 import Mentor from './components/Mentors'
 import Submit from './components/Submit'
 import MenteeWrapper from './components/MenteeWrapper'
+import ScrollToTopButton from './components/ScrollToTop'
+import useScrollToTop from './hooks/useScrollToTop'
 
-function App() {
+function AppContent() {
+  useScrollToTop();
+  
   return (
-    <Router>
+    <>
       <Sidebar />
-      <main style={{ padding: '2rem' }} className="main-content">
+      <main className="main-content">
         <Routes>
           <Route path="/" element={<CardList />} />
           <Route path="/details/:name" element={<MenteeWrapper />} />
@@ -17,6 +21,15 @@ function App() {
           <Route path="/submission-guide" element={<Submit />} />
         </Routes>
       </main>
+      <ScrollToTopButton />
+    </>
+  )
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   )
 }

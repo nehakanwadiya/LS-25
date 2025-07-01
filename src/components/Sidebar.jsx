@@ -17,12 +17,29 @@ function Sidebar() {
     return localStorage.getItem('theme') === 'dark'
   })
 
-  const [hamburgerOpen, setHamburgerOpen] = useState(window.innerWidth <= 768 ? false : true);
+  const [hamburgerOpen, setHamburgerOpen] = useState(() => {
+    return window.innerWidth > 768;
+  });
 
   const toggleHamburger = () => {
-    if(window.innerWidth <= 768)
-    setHamburgerOpen(!hamburgerOpen);
+    if(window.innerWidth <= 768) {
+      setHamburgerOpen(!hamburgerOpen);
+    }
   }
+
+  // Handle window resize
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setHamburgerOpen(true);
+      } else {
+        setHamburgerOpen(false);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
 
 
@@ -55,9 +72,18 @@ function Sidebar() {
         </NavLink>
         
       </nav>
-      <button className="toggle-btn" onClick={() => setDarkMode(prev => !prev)}>
-          {darkMode ? <FiSun className='react-logo' color='white'/> : <FiMoon className='react-logo'/>}
-        </button>
+      <button 
+        className="toggle-btn" 
+        onClick={() => setDarkMode(prev => !prev)}
+        title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+        aria-label={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+      >
+        <div className="theme-toggle-switch">
+          <FiMoon className='moon-icon' />
+          <FiSun className='sun-icon' />
+          <div className="toggle-ball"></div>
+        </div>
+      </button>
     </aside></>
   )
 }

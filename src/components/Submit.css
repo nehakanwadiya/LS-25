@@ -27,8 +27,49 @@ code {
   font-size: 1em;
 }
 
-@media (max-width: 768px){
+/* Tablet responsiveness */
+@media (max-width: 1024px) {
+  #main {
+    margin-left: 2em;
+    font-size: 1.1em;
+  }
+  
   .title-submit {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  #main {
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 1em;
+    padding: 0.3em;
+  }
+  
+  .title-submit {
+    font-size: 1.8rem;
+  }
+  
+  code {
+    font-size: 0.9em;
+    word-break: break-word;
+  }
+}
+
+@media (max-width: 480px) {
+  #main {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    font-size: 0.9em;
+  }
+  
+  .title-submit {
+    font-size: 1.6rem;
+  }
+  
+  code {
+    font-size: 0.8em;
   }
 }

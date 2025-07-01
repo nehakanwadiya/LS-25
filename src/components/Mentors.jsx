@@ -1,7 +1,6 @@
 import './Mentors.css'
 import { AiFillGithub, AiFillLinkedin, AiFillInstagram } from "react-icons/ai";
 
-
 function Mentor() {
   document.title = "Mentors";
 
