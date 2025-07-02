@@ -16,7 +16,12 @@ will create a copy under your GitHub account.
           code .</code></li> <br/>
           <li><b>3. Create a Folder for Your Project:</b> <br/> Inside the <code>src/mentees/</code> directory, create a new folder using your name or username (e.g., <code>Bob/</code>).
 </li> <br/>
-<li><b>4. Add Your Project:</b> <br/> Your folder should contain:
+<li><b>4. Add Your Project:</b> 
+            <li>
+          <b>Note:</b> You can see other sample folders in the <code>src/mentees/</code> directory to check structure, code formats, and examples before adding your own project.
+        </li> <br/>
+ Your folder should contain:
+
 <ul>
   <li>A React app (can be minimal or complex).</li>
   <li>A file named index.jsx that: <br/>
