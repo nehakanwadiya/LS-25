@@ -9,7 +9,10 @@
   color: var(--inactive-nav);
 }
 
-
+.submit-body a {
+  color: inherit;
+  text-decoration: underline;
+}
 
 #main {
   margin-left: 4em;
