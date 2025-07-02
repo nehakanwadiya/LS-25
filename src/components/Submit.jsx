@@ -11,8 +11,9 @@ function Submit() {
 will create a copy under your GitHub account. 
 </li> <br/>
         <li><b>2. Clone Your Fork:</b> <br/>
-          <code>git clone https://github.com/your-username/webcraft-final-website.git <br/>
-          cd webcraft</code></li> <br/>
+          <code>git clone https://github.com/your-username/LS-25.git <br/>
+          cd LS-25<br/>
+          code .</code></li> <br/>
           <li><b>3. Create a Folder for Your Project:</b> <br/> Inside the <code>src/mentees/</code> directory, create a new folder using your name or username (e.g., <code>Bob/</code>).
 </li> <br/>
 <li><b>4. Add Your Project:</b> <br/> Your folder should contain:
@@ -23,25 +24,37 @@ will create a copy under your GitHub account.
       – Exports metadata (title, author, description, thumbnail).
 </li>
 <li>Example structure: <br/>
-<code>src/mentees/Bob/public/src/App.jsxindex.jsx (other optional files)</code></li>
+<img src='./structure-ex.png'></img>
+</li>
 </ul>
 </li> <br/>
 <li><b>5. Metadata Format:</b><br/>In index.jsx, include: <br/>
-<code>
-import BobApp from './App' <br/>
-          export const meta = {"{"} <br/>
-            title: 'Analog Clock', <br/>
-            author: 'Bob', <br/>
-            description: 'A React analog clock using CSS and hooks.', <br/>
-            thumbnail: '/assets/thumbnails/clock.png' <br/>
-          {"}"} <br/>
-          export default BobApp
-  </code></li><br/>
+<img src='./index-ex.png'></img>
+</li><br/>
+  <li>📝 <code>meta</code> is used to generate the card for your app on the homepage.</li><br/>
+  <li>Thumbnail is optional but recommended</li><br/>
+  <ul><li>Place thumbnail image in: <code>public/assets/tumbnails/</code></li><br/>
+  <li>Use the correct public path in your: <code>meta.thumbnail</code></li></ul><br/>
 <li><b>6. Add and Commit Your Changes:</b><br/><code>git add . <br/>
 git commit -m "Added Bob's analog clock project"</code></li><br/>
 <li><b>7. Push Your Branch and Create a Pull Request:</b><br/>
 <code>git push origin main</code><br/>
 Then go to GitHub and open a Pull Request from your forked repo's main branch to the original main branch.
+</li><br/>
+
+<li><b>8. Common mistakes to avoid</b><br/>
+<ul>
+<li>Not using a unique folder name.</li>
+<li>Spaces in folder names(we highly recommend kebab-case).
+This is recommended because the name of your folder will appear on URL, like, <code>https://webcraft.tech-iitb.org/details/bob-analog-clock</code>
+</li>
+<li>Missing <code>index.jsx</code>(follow folder structure)</li>
+<li><code>meta</code> object not exported : Export as export const meta = {}</li>
+<li>Thumbnail path is wrong(pt. 5)</li>
+</ul><br/>
+
+<li><b>9. Test Locally Before Submitting</b></li>
+<code>npm run dev</code>
 </li><br/>
       </ul>
     </div>

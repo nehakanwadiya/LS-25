@@ -52,7 +52,7 @@ function Mentor() {
     {
       id: 5,
       title: 'Tezas',
-      number: 7499972586,
+      number: 7630810718,
       thumbnail: '/assets/mentors/tezas.jpeg',
       Link : {
         github : "https://github.com/odinOnGit",
