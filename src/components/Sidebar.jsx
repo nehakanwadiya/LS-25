@@ -62,14 +62,15 @@ function Sidebar() {
           <AiFillHome className='react-logo' />
           <span className='nav-text'>Home</span>
         </NavLink>
-        <NavLink to="/mentor" onClick={toggleHamburger} className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
-          <AiOutlineAudit className='react-logo' />
-          <span className='nav-text'>Mentor</span>
-        </NavLink>
         <NavLink to="/submission-guide" onClick={toggleHamburger} className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
           <MdHelpOutline className='react-logo' />
           <span className='nav-text'>How to Submit?</span>
         </NavLink>
+        <NavLink to="/mentor" onClick={toggleHamburger} className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
+          <AiOutlineAudit className='react-logo' />
+          <span className='nav-text'>Mentors</span>
+        </NavLink>
+
         
       </nav>
       <button 
