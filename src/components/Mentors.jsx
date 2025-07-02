@@ -5,30 +5,9 @@ function Mentor() {
   document.title = "Mentors";
 
   let MentorCards = [
+    
     {
       id: 1,
-      title: 'Riya',
-      number: 7669697471,
-      thumbnail: '/assets/mentors/riya.jpeg',
-      Link : {
-        github : "https://github.com/RiyaAgrawalRocks",
-        linkedin : "https://www.linkedin.com/in/riya-agrawal-50374628b",
-        instagram : "https://www.instagram.com/riyaagrawal_2022?igsh=a2N3ZWdvcmYxZGZx",
-      }
-    },
-    {
-      id: 2,
-      title: 'Lakshaditya',
-      number: 9667948002,
-      thumbnail: '/assets/mentors/lakshaditya.jpeg',
-      Link : {
-        github : "https://github.com/Thunder25Beast",
-        linkedin : "https://linkedin.com/in/lakshaditya-singh",
-        instagram : "https://www.instagram.com/singh_lakshaditya?igsh=MXFseGFnY29qaGNtcw==",
-      }
-    },
-    {
-      id: 3,
       title: 'Anurag',
       number: 7499972586,
       thumbnail: '/assets/mentors/anurag.jpeg',
@@ -39,7 +18,7 @@ function Mentor() {
       }
     },
     {
-      id: 4,
+      id: 2,
       title: 'Nitansh',
       number: 6395316267,
       thumbnail: '/assets/mentors/nitansh.jpeg',
@@ -50,7 +29,7 @@ function Mentor() {
       }
     },
     {
-      id: 5,
+      id: 3,
       title: 'Tezas',
       number: 7630810718,
       thumbnail: '/assets/mentors/tezas.jpeg',
@@ -58,6 +37,28 @@ function Mentor() {
         github : "https://github.com/odinOnGit",
         linkedin : "https://www.linkedin.com/in/tezas-chetry-12671223b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         instagram : "",
+      }
+    },
+    {
+      id: 4,
+      title: 'Riya',
+      number: 7669697471,
+      thumbnail: '/assets/mentors/riya.jpeg',
+      Link : {
+        github : "https://github.com/RiyaAgrawalRocks",
+        linkedin : "https://www.linkedin.com/in/riya-agrawal-50374628b",
+        instagram : "https://www.instagram.com/riyaagrawal_2022?igsh=a2N3ZWdvcmYxZGZx",
+      }
+    },
+    {
+      id: 5,
+      title: 'Lakshaditya',
+      number: 9667948002,
+      thumbnail: '/assets/mentors/lakshaditya.jpeg',
+      Link : {
+        github : "https://github.com/Thunder25Beast",
+        linkedin : "https://linkedin.com/in/lakshaditya-singh",
+        instagram : "https://www.instagram.com/singh_lakshaditya?igsh=MXFseGFnY29qaGNtcw==",
       }
     },
   ];
