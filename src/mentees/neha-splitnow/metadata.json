@@ -1,0 +1,8 @@
+{
+  "title": "SplitNow+",
+  "description": "A modern bill splitting React app for friends and groups with a clean UI.",
+  "author": "Neha Kanwadiya",
+  "github": "https://github.com/nehakanwadiya/Web_Craft", 
+  "demo": "", 
+  "techStack": ["React", "Vite", "CSS"]
+}
