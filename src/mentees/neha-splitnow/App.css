@@ -1,0 +1,78 @@
+/* App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #fdfcfb, #e2d1c3);
+  color: #333;
+}
+
+.App {
+  max-width: 480px;
+  margin: auto;
+  padding: 20px;
+  background: #ffffffdd;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ff6b81;
+}
+
+h2 {
+  font-size: 20px;
+  color: #333;
+  margin: 20px 0 10px;
+  border-left: 4px solid #ff6b81;
+  padding-left: 10px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #ff6b81;
+  border: none;
+  padding: 10px 18px;
+  margin: 5px 0;
+  border-radius: 12px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #ff3f63;
+  transform: scale(1.05);
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  list-style: '💸 ';
+  margin-bottom: 5px;
+}
+
+.expense-card {
+  background: #fff;
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 5px solid #ffa07a;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
